@@ -16,8 +16,8 @@ try
     {
         Console.WriteLine($"Time: {time}");        
         Console.WriteLine($"\tMilliseconds: {time.ToMilliseconds(),15:N0}");
-        Console.WriteLine($"\tMilliseconds: {time.ToSeconds(),15:N0}");
-        Console.WriteLine($"\tMilliseconds: {time.ToMinutes(),15:N0}");
+        Console.WriteLine($"\tSeconds: {time.ToSeconds(),15:N0}");
+        Console.WriteLine($"\tMinutes: {time.ToMinutes(),15:N0}");
         Console.WriteLine($"\tIsOtherDay: {time.IsOtherDay(t4)}");
         Console.WriteLine($"\tAdd: {time.Add(t3),15:N0}");
     }
