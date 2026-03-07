@@ -35,5 +35,12 @@
       <FileName>Kite.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="Taller02.Backend.Rectangle">
+    <Position X="2" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAIAAAAAAAAAEAAAAAEAEAAAA=</HashCode>
+      <FileName>Rectangle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
