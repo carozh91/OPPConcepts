@@ -24,10 +24,7 @@ public class Circle: GeometricFigure
     public override decimal GetPerimiter() => 2 * 3.1416m * R;
 
 
-    public override string ToString()
-    {
-        return base.ToString();
-    }
+
 
     private decimal ValidateR(decimal r) 
     {

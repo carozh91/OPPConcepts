@@ -19,10 +19,7 @@ public class Square: GeometricFigure
 
     public override decimal GetPerimiter() => 4 * A;
 
-    public override string ToString()
-    {
-        return base.ToString();
-    }
+    
 
 
     private decimal ValidateA(decimal a) 
