@@ -33,7 +33,7 @@ public abstract class Employee
     public override string ToString()
     {
         return $"{Id}\t{FirstName} {LastName}\n\t" +
-               $"Value To Pay: {GetValueToPay()}";
+               $"Value To Pay: {GetValueToPay(),20:C2}";
     }
 
     public abstract decimal GetValueToPay();
