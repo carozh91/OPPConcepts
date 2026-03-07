@@ -15,17 +15,24 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Taller02.Backend.Square">
-    <Position X="5.25" Y="3.75" Width="1.5" />
+    <Position X="5.25" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAACAQAAAAAAAAAAAAAAAAAEAAAAAMAAAAAA=</HashCode>
       <FileName>Square.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Taller02.Backend.Rhombus">
-    <Position X="7.75" Y="5.5" Width="1.5" />
+    <Position X="9.25" Y="5.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAgAAAAAAAAAAAAAAAAAAQAAAAAAEIAAkAEAAAAAA=</HashCode>
       <FileName>Rhombus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Taller02.Backend.Kite">
+    <Position X="11.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAIAAAAAAAAAEAAAAAEAEAAAA=</HashCode>
+      <FileName>Kite.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
