@@ -4,29 +4,29 @@ namespace Taller02.Backend;
 
 public class Circle: GeometricFigure
 {
-    private decimal _r;
+    private double _r;
 
-    public Circle(string name, decimal r) :
+    public Circle(string name, double r) :
         base(name)
     {
         R = r;
     }
 
-    public decimal R 
+    public double R 
     { 
         get => _r; 
         set => _r = ValidateR(value); 
     }
 
-    public override decimal GetArea() => 3.1416m * R* R;
+    public override double GetArea() => 3.1416 * R* R;
 
 
-    public override decimal GetPerimiter() => 2 * 3.1416m * R;
+    public override double GetPerimiter() => 2 * 3.1416 * R;
 
 
 
 
-    private decimal ValidateR(decimal r) 
+    private double ValidateR(double r) 
     {
         if (r < 0) 
         {

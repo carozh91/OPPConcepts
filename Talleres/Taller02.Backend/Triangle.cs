@@ -1,36 +1,38 @@
 ﻿
 
+using System;
+
 namespace Taller02.Backend;
 
 public class Triangle:Rectangle
 {
-    private decimal _h;
-    private decimal _c;
-    public Triangle(string name, decimal a, decimal b, decimal h,decimal c) : base(name, a, b)
+    private double _h;
+    private double _c;
+    public Triangle(string name, double a, double b, double h, double c) : base(name, a, b)
     {
         H = h;
         C = c;
     }
 
-    public decimal H
+    public double H
     {
         get => _h;
         set => _h = ValidateH(value);
     }
 
-    public decimal C
+    public double C
     {
         get => _c;
         set => _c = ValidateC(value);
     }
 
 
-    public override decimal GetArea() => (H * B)/2;
+    public override double GetArea() => (H * B)/2;
 
 
-    public override decimal GetPerimiter() => (A + B + C);
+    public override double GetPerimiter() => (A + B + C);
 
-    private decimal ValidateH(decimal h)
+    private double ValidateH(double h)
     {
         if (h < 0)
         {
@@ -39,7 +41,7 @@ public class Triangle:Rectangle
         return h;
     }
 
-    private decimal ValidateC(decimal c)
+    private double ValidateC(double c)
     {
         if (c < 0)
         {

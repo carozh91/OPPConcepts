@@ -4,24 +4,24 @@ namespace Taller02.Backend;
 
 public class Trapeze:Triangle
 {
-    private decimal _d;
+    private double _d;
     
-    public Trapeze(string name, decimal a, decimal b, decimal h, decimal c,decimal d) : base(name,a,b,h,c)
+    public Trapeze(string name, double a, double b, double h, double c, double d) : base(name,a,b,h,c)
     {
         D = d;
     }
 
-    public decimal D
+    public double D
     {
         get => _d;
         set => _d = ValidateD(value);
     }
-    public override decimal GetArea() => (B + D) * H/2;
+    public override double GetArea() => (B + D) * H/2;
 
 
-    public override decimal GetPerimiter() => (A + B + C + D);
+    public override double GetPerimiter() => (A + B + C + D);
 
-    private decimal ValidateD(decimal d)
+    private double ValidateD(double d)
     {
         if (d < 0)
         {

@@ -3,26 +3,26 @@ namespace Taller02.Backend;
 
 public class Square: GeometricFigure
 {
-    private decimal _a;
-    public Square(string Name, decimal a): base(Name)
+    private double _a;
+    public Square(string name, double a): base(name)
     {
         A = a;
     }
 
-    public decimal A 
+    public double A 
     { 
         get => _a; 
         set => _a = ValidateA(value); 
     }
 
-    public override decimal GetArea() => A * A;
+    public override double GetArea() => A * A;
 
-    public override decimal GetPerimiter() => 4 * A;
+    public override double GetPerimiter() => 4 * A;
 
     
 
 
-    private decimal ValidateA(decimal a) 
+    private double ValidateA(double a) 
     {
         if(a < 0)
         {

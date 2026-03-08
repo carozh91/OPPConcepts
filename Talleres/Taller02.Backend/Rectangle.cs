@@ -1,26 +1,28 @@
 ﻿
 
+using System;
+
 namespace Taller02.Backend;
 
 public class Rectangle : Square
 {
-    private decimal _b;
-    public Rectangle(string name, decimal a, decimal b): base(name,a)
+    private double _b;
+    public Rectangle(string name, double a, double b): base(name,a)
     {
         B = b;
     }
 
-    public decimal B
+    public double B
     {
         get => _b;
         set => _b = ValidateB(value);
     }
-    public override decimal GetArea() => A * B;
+    public override double GetArea() => A * B;
 
 
-    public override decimal GetPerimiter() => 2 * (A + B);
+    public override double GetPerimiter() => 2 * (A + B);
 
-    private decimal ValidateB(decimal b)
+    private double ValidateB(double b)
     {
         if (b < 0)
         {

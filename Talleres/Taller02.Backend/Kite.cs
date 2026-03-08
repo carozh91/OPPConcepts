@@ -6,24 +6,24 @@ public class Kite : Rhombus
 
     
 {
-    private decimal _b;
-    public Kite(string name, decimal a, decimal d1, decimal d2, decimal b): base(name,a,d1,d2)
+    private double _b;
+    public Kite(string name, double a, double d1, double d2, double b): base(name,a,d1,d2)
     {
         B = b;
     }
 
-    public decimal B 
+    public double B 
     { 
         get => _b; 
         set => _b = ValidateB(value); 
     }
-    public override decimal GetArea() => (D1 * D2) / 2;
+    public override double GetArea() => (D1 * D2) / 2;
 
 
-    public override decimal GetPerimiter() => 2 * (A + B);
+    public override double GetPerimiter() => 2 * (A + B);
    
 
-    private decimal ValidateB(decimal b)
+    private double ValidateB(double b)
     {
         if (b < 0)
         {
